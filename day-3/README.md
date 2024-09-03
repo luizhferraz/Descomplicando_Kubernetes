@@ -1,8 +1,6 @@
 # Descomplicando o Kubernetes
-
-## DAY-3
 &nbsp;
-
+## DAY-3
 &nbsp;
 ### Conteúdo do Day-3
 
