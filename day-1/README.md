@@ -2,7 +2,6 @@
 &nbsp;
 ## DAY-1: O que é o Kubernetes?
 &nbsp;
-
 ### Conteúdo do Day-1
 
 - [Descomplicando o Kubernetes](#descomplicando-o-kubernetes)
