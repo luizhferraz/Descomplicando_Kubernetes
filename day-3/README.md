@@ -26,16 +26,8 @@
       - [Removendo um Deployment](#removendo-um-deployment)
       - [Conclusão](#conclusão)
 
-
-
-
-
-
-
 &nbsp;
-
 ### Inicio da aula do Day-3
-
 &nbsp;
 
 ### O que iremos ver hoje?
