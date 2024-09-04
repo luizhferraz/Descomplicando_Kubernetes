@@ -1,5 +1,6 @@
 # Descomplicando o Kubernetes
 Curso ministrado pelo Jeferson Fernando, lá na LinuxTips. Abaixo segue o link do curso para quem tiver interesse
+&nbsp;
 [Curso Descomplicando o Kubernetes da LinuxTips] (#ttps://linuxtips.io/treinamento/descomplicando-o-kubernetes-2024)
 
 &nbsp;
