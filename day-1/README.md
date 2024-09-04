@@ -1,4 +1,7 @@
 # Descomplicando o Kubernetes
+Curso ministrado pelo Jeferson Fernando, lá na LinuxTips. Abaixo segue o link do curso para quem tiver interesse
+(#https://linuxtips.io/treinamento/descomplicando-o-kubernetes-2024/)
+
 &nbsp;
 ## DAY-1: O que é o Kubernetes?
 &nbsp;
@@ -61,7 +64,9 @@
 Durante o Day-1 exploraremos o conceito de containers, discutiremos a relevância do container runtime e do container engine. Além disso, vamos entender o que é o Kubernetes e sua arquitetura, falaremos sobre o control plane, workers, apiserver, scheduler, controller e muito mais!
 Será aqui que iremos criar o nosso primeiro cluster Kubernetes e realizar o deploy de um pod do Nginx. 
 O Day-1 é para que você possa se sentir mais confortável com o Kubernetes e seus conceitos iniciais.
+
 &nbsp;
+
 ### Inicio da aula do Day-1
 &nbsp;
 ### Qual distro GNU/Linux devo usar?
