@@ -4,6 +4,8 @@ Curso ministrado pelo Jeferson Fernando, lá na LinuxTips. Abaixo segue o link d
 [Curso Descomplicando o Kubernetes da LinuxTips](https://linuxtips.io/treinamento/descomplicando-o-kubernetes-2024)
 
 &nbsp;
+## DAY-4 - Descomplicando o ReplicaSet e o DaemonSet
+&nbsp;
 ## Conteúdo do Day-4
 
 - [DAY-4](README.md)
