@@ -6,7 +6,6 @@ Curso ministrado pelo Jeferson Fernando, lá na LinuxTips. Abaixo segue o link d
 &nbsp;
 ## DAY-2 - Descomplicando o Pod
 &nbsp;
-
 ### Conteúdo do Day-2
 
 - [Descomplicando o Kubernetes](#descomplicando-o-kubernetes)
