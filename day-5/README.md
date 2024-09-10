@@ -78,8 +78,6 @@ Já no lado dos `workers`, as coisa são bem mais simples, pois a principal fun�
 
 * Todos os `pods` de nossas aplicações.
 
-
-
 #### Formas de instalar o Kubernetes
 
 Hoje nós iremos focar a instalação do Kubernetes utilizando o `kubeadm`, que é uma das formas mais antigas para a criação de um cluster Kubernetes. Mas existem outras formas de instalar o Kubernetes, vou detalhar algumas delas aqui:
@@ -97,7 +95,6 @@ Hoje nós iremos focar a instalação do Kubernetes utilizando o `kubeadm`, que 
 * **`Minikube` e `kind`**: São ferramentas que permitem criar um cluster Kubernetes localmente, em um único nó. São úteis para testar e aprender sobre o Kubernetes, pois você pode criar um cluster em poucos minutos e começar a implantar aplicativos imediatamente. Elas também são úteis para pessoas desenvolvedoras que precisam testar suas aplicações em um ambiente Kubernetes sem precisar configurar um cluster em um ambiente de produção.
 
 Ainda existem outras formas de instalar o Kubernetes, mas essas são as mais comuns. Para mais detalhes sobre as outras formas de instalar o Kubernetes, você pode consultar a documentação oficial do Kubernetes.
-
 
 #### Criando um cluster Kubernetes com o kubeadm
 
@@ -124,7 +121,6 @@ Primeira coisa, para que possamos seguir em frente, temos que entender quais sã
     * Porta 30000-32767: Essas portas são usadas para serviços NodePort que precisam ser acessíveis fora do cluster. O Kubernetes aloca uma porta aleatória dentro desse intervalo para cada serviço NodePort e redireciona o tráfego para o pod correspondente.
 
     * Porta 2379-2380: Essas portas são usadas pelo etcd, o banco de dados de chave-valor distribuído usado pelo control plane do Kubernetes. A porta 2379 é usada para comunicação de leitura/gravação e a porta 2380 é usada apenas para comunicação de eleição.
-
 
 &nbsp;
 
@@ -175,9 +171,9 @@ Essas instruções são para o Kubernetes v1.31.
 Atualize o índice de pacotes apt e instale os pacotes necessários para usar o repositório apt do Kubernetes:
 ```
 sudo apt-get update
-```
+
 apt-transport-https pode ser um pacote fictício; se for, você pode pular esse pacote
-```
+
 sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 ```
 Baixe a chave pública de assinatura para os repositórios de pacotes do Kubernetes. A mesma chave de assinatura é usada para todos os repositórios, então você pode ignorar a versão na URL:
@@ -185,7 +181,7 @@ Baixe a chave pública de assinatura para os repositórios de pacotes do Kuberne
 Se o diretório `/etc/apt/keyrings` não existir, ele deve ser criado antes do comando curl, leia a nota abaixo.
 ```
 sudo mkdir -p -m 755 /etc/apt/keyrings
-```
+
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.31/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 ```
 Nota:
