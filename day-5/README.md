@@ -164,17 +164,14 @@ sudo sysctl --system
 ```
 ##### Instalando os pacotes do Kubernetes
 
-Hora de instalar os pacotes do Kubernetes!
-
 Essas instruções são para o Kubernetes v1.31.
 
 Atualize o índice de pacotes apt e instale os pacotes necessários para usar o repositório apt do Kubernetes:
 ```
 sudo apt-get update
 
-apt-transport-https pode ser um pacote fictício; se for, você pode pular esse pacote
+sudo apt-get install apt-transport-https curl -y
 
-sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 ```
 Baixe a chave pública de assinatura para os repositórios de pacotes do Kubernetes. A mesma chave de assinatura é usada para todos os repositórios, então você pode ignorar a versão na URL:
 
