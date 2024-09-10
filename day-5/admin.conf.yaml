@@ -1,0 +1,25 @@
+apiVersion: v1
+
+clusters:
+- cluster:
+    certificate-authority-data: SEU_CERTIFICADO_AQUI
+    server: https://172.31.16.42:6443
+  name: kubernetes
+
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+
+current-context: kubernetes-admin@kubernetes
+
+kind: Config
+
+preferences: {}
+
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: SUA_CHAVE_PUBLICA_AQUI
+    client-key-data: SUA_CHAVE_PRIVADA_AQUI
