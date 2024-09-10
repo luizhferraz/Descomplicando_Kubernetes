@@ -166,7 +166,6 @@ EOF
 
 sudo sysctl --system
 ```
-
 ##### Instalando os pacotes do Kubernetes
 
 Hora de instalar os pacotes do Kubernetes!
@@ -177,13 +176,13 @@ Atualize o índice de pacotes apt e instale os pacotes necessários para usar o 
 ```
 sudo apt-get update
 ```
-# apt-transport-https pode ser um pacote fictício; se for, você pode pular esse pacote
+apt-transport-https pode ser um pacote fictício; se for, você pode pular esse pacote
 ```
 sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 ```
 Baixe a chave pública de assinatura para os repositórios de pacotes do Kubernetes. A mesma chave de assinatura é usada para todos os repositórios, então você pode ignorar a versão na URL:
 
-# Se o diretório `/etc/apt/keyrings` não existir, ele deve ser criado antes do comando curl, leia a nota abaixo.
+Se o diretório `/etc/apt/keyrings` não existir, ele deve ser criado antes do comando curl, leia a nota abaixo.
 # sudo mkdir -p -m 755 /etc/apt/keyrings
 ```
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.31/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
