@@ -169,8 +169,7 @@ Essas instruções são para o Kubernetes v1.31.
 Atualize o índice de pacotes apt e instale os pacotes necessários para usar o repositório apt do Kubernetes:
 ```
 sudo apt-get update
-
-sudo apt-get install apt-transport-https curl -y
+sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 
 ```
 Baixe a chave pública de assinatura para os repositórios de pacotes do Kubernetes. A mesma chave de assinatura é usada para todos os repositórios, então você pode ignorar a versão na URL:
@@ -194,8 +193,9 @@ Atualize o índice de pacotes apt, instale o kubelet, o kubeadm e o kubectl, e f
 sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+```
 (Opcional) Habilite o serviço kubelet antes de executar o kubeadm:
-
+```
 sudo systemctl enable --now kubelet
 ```
 
