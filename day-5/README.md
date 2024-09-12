@@ -345,6 +345,11 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
+Agora você deve instalar o plugin para continuar:
+```
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+```
+
 &nbsp;
 
 Essa configuração é necessária para que o kubectl possa se comunicar com o cluster, pois quando estamos copiando o arquivo `admin.conf` para o diretório `.kube` do usuário, estamos copiando o arquivo com as permissões de root, esse é o motivo de executarmos o comando `sudo chown $(id -u):$(id -g) $HOME/.kube/config` para alterar as permissões do arquivo para o usuário que está executando o comando.
