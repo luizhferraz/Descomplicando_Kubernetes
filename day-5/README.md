@@ -183,8 +183,8 @@ Baixe a chave pública de assinatura para os repositórios de pacotes do Kuberne
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.31/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 ```
 > Nota:
-> Em lançamentos anteriores ao Debian 12 e Ubuntu 22.04, o diretório /etc/apt/keyrings não existe por padrão, e deve ser criado antes do comando curl.
-> Adicione o repositório apt apropriado do Kubernetes. Por favor, note que este repositório tem pacotes apenas para o Kubernetes 1.31; para outras versões menores do Kubernetes, você precisa > mudar a versão menor do Kubernetes na URL para corresponder à sua versão menor desejada (você também deve verificar se está lendo a documentação para a versão do Kubernetes que você planeja instalar).
+Em lançamentos anteriores ao Debian 12 e Ubuntu 22.04, o diretório /etc/apt/keyrings não existe por padrão, e deve ser criado antes do comando curl.
+Adicione o repositório apt apropriado do Kubernetes. Por favor, note que este repositório tem pacotes apenas para o Kubernetes 1.31; para outras versões menores do Kubernetes, você precisa  mudar a versão menor do Kubernetes na URL para corresponder à sua versão menor desejada (você também deve verificar se está lendo a documentação para a versão do Kubernetes que você planeja instalar).
 
 Isso sobrescreve qualquer configuração existente em /etc/apt/sources.list.d/kubernetes.list
 ```
