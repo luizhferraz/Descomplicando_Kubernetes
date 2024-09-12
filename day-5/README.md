@@ -345,7 +345,7 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
-Agora você deve instalar o plugin para continuar:
+Depois de usar o kubeadm join, você deve instalar o plugin abaixo para que os nodes fiquem readys:
 ```
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 ```
