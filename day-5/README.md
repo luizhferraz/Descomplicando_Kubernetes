@@ -198,7 +198,7 @@ sudo sysctl --system
     sudo systemctl enable --now kubelet
     ```
     > O kubelet agora ficará reiniciando de alguns em alguns segundos, enquanto espera por instruções vindas do kubeadm.
-
+```
 ```
 ##### Instalando o containerd
 
