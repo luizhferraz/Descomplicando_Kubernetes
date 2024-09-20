@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meu-pv-nfs
+  labels:
+    storage: nfs
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    server: IP_DO_SERVIDOR_NFS
+    path: "/mnt/nfs"
+  storageClassName: nfs
